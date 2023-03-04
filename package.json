@@ -13,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.4",
     "bootstrap": "^5.2.3",
+    "g": "^2.0.1",
     "mui": "^0.0.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
@@ -29,6 +30,14 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "optimization": {
+    "scripts": true,
+    "styles": {
+       "minify": false,
+       "inlineCritical": false
+    },
+    "fonts": true
   },
   "eslintConfig": {
     "extends": [
@@ -47,5 +56,15 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "script":
+{
+   "dev": "next dev",
+    "build": "next build", 
+    "start": "next start",
+    "lint": "next lint"
+},
+"engines": {
+  "node": "16.x"
+}
 }
